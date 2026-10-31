@@ -79,3 +79,4 @@
 .intrepid-character-renders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:22px}.intrepid-character-renders img{width:100%;height:auto}.intrepid-bts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}.intrepid-bts-grid img{width:100%;height:auto}
 .intrepid-bts-grid .intrepid-media{padding:0}
 @media(max-width:650px){.intrepid-character-renders,.intrepid-bts-grid{grid-template-columns:1fr;gap:14px}}
+.project-film-section{margin:12px 0 54px;padding-top:21px;border-top:1px solid #c6c6c6}.project-film-section h3{font-size:clamp(30px,4vw,50px);font-weight:500;letter-spacing:-.04em;line-height:1.1;margin:0 0 24px}.project-film-section figure{margin:0;background:#080b0e}.project-film-section video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#080b0e}.project-film-05 video{aspect-ratio:7/3}
