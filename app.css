@@ -87,3 +87,4 @@
 @media(max-width:650px){.about{margin-top:32px;margin-bottom:48px}.works{margin-bottom:64px}}
 .showreel{margin:50px clamp(16px,2vw,40px) 90px;scroll-margin-top:20px}.showreel-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:18px 0 22px;border-top:1px solid #c9c9c6}.showreel-heading h2{margin:0;color:#111;font-size:clamp(30px,4vw,54px);line-height:1;letter-spacing:-.045em;font-weight:600}.showreel-heading span{font-size:13px;color:#656560}.showreel video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#050505}
 @media(max-width:650px){.showreel{margin-top:34px;margin-bottom:56px}.showreel-heading{padding:15px 0 17px}.showreel-heading h2{font-size:31px}}
+.projects-heading{grid-column:1/-1}
