@@ -88,3 +88,56 @@
 .showreel{margin:50px clamp(16px,2vw,40px) 90px;scroll-margin-top:20px}.showreel-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:18px 0 22px;border-top:1px solid #c9c9c6}.showreel-heading h2{margin:0;color:#111;font-size:clamp(30px,4vw,54px);line-height:1;letter-spacing:-.045em;font-weight:600}.showreel-heading span{font-size:13px;color:#656560}.showreel video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#050505}
 @media(max-width:650px){.showreel{margin-top:34px;margin-bottom:56px}.showreel-heading{padding:15px 0 17px}.showreel-heading h2{font-size:31px}}
 .projects-heading{grid-column:1/-1}
+
+/* Project identities are decorative layers; artwork and video remain unaltered. */
+.hyperdrive-viewer,.cyberpunk-viewer,.larsh-viewer,.intrepid-viewer{isolation:isolate;overflow-x:hidden}
+.hyperdrive-viewer .viewer-content,.cyberpunk-viewer .viewer-content,.larsh-viewer .viewer-content,.intrepid-viewer .viewer-content{position:relative;z-index:1}
+.project-atmosphere{position:sticky;top:0;height:1px;margin-bottom:-1px;z-index:0;pointer-events:none;overflow:visible}
+.theme-motif{position:absolute;display:block;pointer-events:none}
+.hyperdrive-viewer,.cyberpunk-viewer,.larsh-viewer{font-family:Bahnschrift,"Arial Narrow","Segoe UI",sans-serif}
+.hyperdrive-viewer .viewer-top button,.hyperdrive-viewer .viewer-bottom button,.cyberpunk-viewer .viewer-top button,.cyberpunk-viewer .viewer-bottom button,.larsh-viewer .viewer-top button,.larsh-viewer .viewer-bottom button,.intrepid-viewer .viewer-top button,.intrepid-viewer .viewer-bottom button{color:inherit}
+.hyperdrive-viewer .project-description,.cyberpunk-viewer .project-description,.larsh-viewer .project-description,.intrepid-viewer .project-description{border-top:1px solid var(--theme-rule)}
+.hyperdrive-viewer .viewer-top,.hyperdrive-viewer .viewer-bottom,.cyberpunk-viewer .viewer-top,.cyberpunk-viewer .viewer-bottom,.larsh-viewer .viewer-top,.larsh-viewer .viewer-bottom,.intrepid-viewer .viewer-top,.intrepid-viewer .viewer-bottom{border-color:var(--theme-rule)}
+.hyperdrive-viewer .project-heading p,.hyperdrive-viewer .project-description dt,.hyperdrive-viewer .viewer-bottom span,.cyberpunk-viewer .project-heading p,.cyberpunk-viewer .project-description dt,.cyberpunk-viewer .viewer-bottom span,.larsh-viewer .project-heading p,.larsh-viewer .project-description dt,.larsh-viewer .viewer-bottom span,.intrepid-viewer .project-heading p,.intrepid-viewer .project-description dt,.intrepid-viewer .viewer-bottom span{color:var(--theme-muted)}
+.hyperdrive-viewer .project-heading p,.cyberpunk-viewer .project-heading p,.larsh-viewer .project-heading p,.intrepid-viewer .project-heading p{font-family:Consolas,"Lucida Console",monospace;letter-spacing:.13em;text-transform:uppercase}
+.hyperdrive-viewer .detail-artwork,.cyberpunk-viewer .detail-artwork,.larsh-viewer .detail-artwork{border:1px solid var(--theme-rule);box-shadow:0 24px 65px rgba(0,0,0,.24)}
+.hyperdrive-viewer .project-summary,.cyberpunk-viewer .project-summary,.larsh-viewer .project-summary{color:var(--theme-copy)}
+.hyperdrive-viewer .project-film-section,.cyberpunk-viewer .project-film-section,.larsh-viewer .project-film-section{border-color:var(--theme-rule)}
+.hyperdrive-viewer .project-film-section h3,.cyberpunk-viewer .project-film-section h3,.larsh-viewer .project-film-section h3{color:var(--theme-accent);font-family:Bahnschrift,"Arial Narrow","Segoe UI",sans-serif;font-weight:600;text-transform:uppercase}
+.hyperdrive-viewer .project-film-section figure,.cyberpunk-viewer .project-film-section figure,.larsh-viewer .project-film-section figure{border:1px solid var(--theme-rule);padding:7px;box-shadow:0 22px 60px rgba(0,0,0,.25)}
+
+.hyperdrive-viewer{--theme-rule:rgba(155,185,216,.31);--theme-muted:#a5bacf;--theme-copy:#d9e3f0;--theme-accent:#b6d9f4;background:radial-gradient(ellipse at 72% 3%,rgba(106,137,218,.25),transparent 39%),radial-gradient(ellipse at 6% 64%,rgba(84,80,138,.16),transparent 45%),linear-gradient(155deg,#0c101e 0%,#101727 53%,#171a2b 100%);color:#edf4fb;border:1px solid #405b76;box-shadow:0 20px 90px rgba(13,26,49,.37)}
+.hyperdrive-viewer::backdrop{background:rgba(6,12,30,.77);backdrop-filter:blur(8px)}
+.hyperdrive-viewer .project-heading h2{color:#e7f5ff;font-size:clamp(58px,8vw,108px);font-style:italic;font-weight:800;letter-spacing:-.075em;text-shadow:8px 10px 36px rgba(128,193,241,.24)}
+.hyperdrive-viewer .motif-one{left:-9%;top:7vh;width:118%;height:62vh;transform:skewY(-14deg);background:repeating-linear-gradient(172deg,transparent 0 46px,rgba(173,217,255,.09) 47px,transparent 49px 95px);mask-image:linear-gradient(90deg,transparent,#000 18% 79%,transparent)}
+.hyperdrive-viewer .motif-two{right:-16%;top:1vh;width:75%;height:38vh;border-top:2px solid rgba(150,213,255,.35);border-radius:50%;transform:rotate(-14deg);filter:drop-shadow(0 0 15px rgba(157,208,255,.35))}
+.hyperdrive-viewer .motif-three{right:5%;top:12vh;width:40%;height:34vh;background:linear-gradient(110deg,transparent 20%,rgba(168,131,221,.13),transparent 68%);transform:skewY(-19deg);filter:blur(22px)}
+
+.cyberpunk-viewer{--theme-rule:rgba(54,214,220,.32);--theme-muted:#81bfc4;--theme-copy:#d1e9e8;--theme-accent:#7ff1ed;background:radial-gradient(ellipse at 83% 6%,rgba(0,204,216,.18),transparent 33%),radial-gradient(ellipse at 9% 64%,rgba(198,40,160,.15),transparent 38%),linear-gradient(152deg,#030b14 0%,#06131c 48%,#0b1024 100%);color:#e7f7f6;border:1px solid #1b6770;box-shadow:0 20px 90px rgba(0,24,35,.43)}
+.cyberpunk-viewer::backdrop{background:rgba(2,7,19,.87);backdrop-filter:blur(8px)}
+.cyberpunk-viewer .project-heading h2{color:#f0fffc;font-size:clamp(53px,8vw,112px);font-weight:800;letter-spacing:-.07em;text-transform:uppercase;text-shadow:2px 2px 0 rgba(27,207,208,.38),-2px -2px 0 rgba(211,68,174,.25),0 0 42px rgba(0,225,224,.2)}
+.cyberpunk-viewer .motif-one{left:-12%;top:18vh;width:124%;height:46vh;background:linear-gradient(90deg,transparent 98%,rgba(75,219,219,.22) 100%),linear-gradient(transparent 97%,rgba(75,219,219,.2) 100%);background-size:58px 58px;transform:perspective(640px) rotateX(66deg);transform-origin:center bottom;mask-image:linear-gradient(transparent,#000 46%,transparent)}
+.cyberpunk-viewer .motif-two{right:6%;top:3vh;width:12vw;height:58vh;max-width:160px;background:linear-gradient(180deg,transparent,rgba(37,220,222,.11),rgba(37,220,222,.02));border-left:1px solid rgba(66,226,230,.28);border-right:1px solid rgba(66,226,230,.16);transform:skewX(-18deg)}
+.cyberpunk-viewer .motif-three{left:-8%;top:39vh;width:61%;height:2px;background:linear-gradient(90deg,transparent,rgba(230,77,184,.6),transparent);box-shadow:0 0 18px rgba(226,67,190,.33);transform:rotate(-16deg)}
+
+.larsh-viewer{--theme-rule:rgba(87,188,183,.45);--theme-muted:#8dc7c3;--theme-copy:#e2f1ec;--theme-accent:#f7de6f;background:radial-gradient(circle at 86% 12%,rgba(122,211,194,.22),transparent 34%),radial-gradient(circle at 10% 70%,rgba(193,94,164,.12),transparent 37%),linear-gradient(150deg,#12313a 0%,#17434a 52%,#113038 100%);color:#f2f7ed;border:3px solid #51948f;box-shadow:12px 12px 0 rgba(18,60,64,.28),0 20px 80px rgba(9,48,52,.32)}
+.larsh-viewer::backdrop{background:rgba(8,31,39,.75);backdrop-filter:blur(6px)}
+.larsh-viewer .project-heading h2{color:#fbf9d9;font-family:Consolas,"Lucida Console",monospace;font-size:clamp(50px,8vw,106px);font-weight:800;letter-spacing:-.075em;text-transform:uppercase;text-shadow:5px 5px 0 #277672,9px 9px 0 rgba(10,30,38,.34)}
+.larsh-viewer .project-film-section h3{font-family:Consolas,"Lucida Console",monospace;letter-spacing:-.04em}
+.larsh-viewer .detail-artwork,.larsh-viewer .project-film-section figure{border-width:3px;border-radius:0;box-shadow:8px 8px 0 rgba(5,39,44,.4)}
+.larsh-viewer .motif-one{left:-10%;top:3vh;width:120%;height:67vh;background-image:linear-gradient(rgba(196,246,224,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(196,246,224,.08) 1px,transparent 1px);background-size:36px 36px;transform:skewY(-9deg);mask-image:radial-gradient(ellipse at 50% 50%,#000 3%,transparent 75%)}
+.larsh-viewer .motif-two{right:8%;top:6vh;width:46px;height:46px;background:#ff5ca8;clip-path:polygon(50% 100%,0 0,100% 0);box-shadow:0 0 22px rgba(255,92,168,.45)}
+.larsh-viewer .motif-three{left:9%;top:46vh;width:31px;height:31px;background:#f4e65c;clip-path:polygon(50% 100%,0 0,100% 0);transform:rotate(24deg)}
+
+.intrepid-viewer{--theme-rule:rgba(194,210,150,.31);--theme-muted:#b4ceb0;--theme-accent:#e4bf83;background:radial-gradient(ellipse at 56% 0%,rgba(117,159,118,.21),transparent 39%),radial-gradient(ellipse at 91% 47%,rgba(2,155,139,.12),transparent 38%),radial-gradient(ellipse at 7% 72%,rgba(211,126,50,.11),transparent 42%),linear-gradient(157deg,#061512 0%,#0b211c 52%,#101b17 100%);border-color:#53745e;box-shadow:0 20px 100px rgba(0,27,22,.48)}
+.intrepid-viewer .project-heading h2{color:#ffe3af;text-shadow:0 0 35px rgba(230,173,94,.22)}
+.intrepid-viewer .motif-one{left:25%;top:-20vh;width:82%;height:95vh;border:1px solid rgba(169,216,172,.16);border-radius:48% 52% 62% 38%;transform:rotate(-19deg);box-shadow:0 0 0 38px rgba(164,208,163,.025),0 0 0 82px rgba(164,208,163,.025),0 0 0 135px rgba(164,208,163,.02)}
+.intrepid-viewer .motif-two{right:10%;top:13vh;width:14px;height:14px;border-radius:50%;background:rgba(83,251,210,.62);box-shadow:-130px 46px 0 -5px rgba(132,248,195,.65),-260px 180px 0 -4px rgba(145,241,198,.55),79px 158px 0 -5px rgba(253,197,122,.6),-390px 353px 0 -5px rgba(151,250,198,.48),0 0 22px 8px rgba(78,230,185,.25)}
+.intrepid-viewer .motif-three{left:52%;top:0;width:34%;height:70vh;background:linear-gradient(168deg,rgba(236,194,115,.1),transparent 70%);filter:blur(20px);transform:skewX(-18deg)}
+.intrepid-editorial-heading{border-image:linear-gradient(90deg,rgba(230,187,117,.75),rgba(105,219,176,.27),transparent) 1;padding-top:24px;text-shadow:0 0 28px rgba(240,194,120,.12)}
+.intrepid-film-title{padding:24px 0;margin-top:0;border-top:1px solid rgba(223,190,139,.55);border-bottom:1px solid rgba(223,190,139,.25);letter-spacing:.015em}
+.intrepid-media{background:rgba(181,213,180,.065);border-color:rgba(167,215,177,.27);box-shadow:0 18px 52px rgba(0,0,0,.16)}
+.intrepid-gallery .intrepid-media:first-child{grid-column:1/-1}
+.intrepid-gallery .intrepid-media img{display:block}
+@media(max-width:650px){.hyperdrive-viewer .project-heading h2,.cyberpunk-viewer .project-heading h2,.larsh-viewer .project-heading h2{font-size:clamp(44px,11vw,74px)}.intrepid-gallery .intrepid-media:first-child{grid-column:auto}.project-atmosphere{opacity:.7}.larsh-viewer .motif-two{right:4%;width:28px;height:28px}.larsh-viewer .motif-three{left:5%;width:20px;height:20px}}
+@media(prefers-reduced-motion:reduce){.theme-motif{animation:none!important}}
